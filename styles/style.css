@@ -14,14 +14,28 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 2rem 2.4rem 2.4rem 2rem;
 }
 .humberger-group {
     border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.6rem;
 }
 
 .humberger {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+.item   {
+    background-color: hsl(219, 9%, 45%);
+    width: 1.5rem;
+    height: 0.3rem;
 }
 .cart-avatar {
     border: 1px solid green;
@@ -37,6 +51,10 @@ header {
 }
 
 .avatar {
-    width: 2.4rem;
+    width: 2.5rem;
     cursor: pointer;
+}
+.avatar:hover {
+    border: 2px solid hsl(26, 100%, 55%);
+    border-radius: 50%;
 }
