@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;;
+}
+
+header {
+    border: 1px solid magenta;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.humberger-group {
+    border: 1px solid blue;
+}
+
+.humberger {
+    
+}
+.cart-avatar {
+    border: 1px solid green;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.4rem;
+}
+
+.cart {
+    cursor: pointer;
+}
+
+.avatar {
+    width: 2.4rem;
+    cursor: pointer;
+}
