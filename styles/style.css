@@ -7,43 +7,55 @@
 body {
     font-family: 'Kumbh Sans', sans-serif;;
 }
+.container {
+    width: 80%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 header {
-    border: 1px solid magenta;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 2.4rem 2.4rem 2rem;
+    margin-top: 1.5rem;
 }
-.humberger-group {
-    border: 1px solid blue;
+.menu {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 1.6rem;
 }
 
-.humberger {
+.menu ul{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.3rem;
+    flex-direction: row;
+    gap: 2.5rem;
+    list-style-type: none;
+    margin-left: 4rem;
+}
+
+img {
+    transition: transform 0.5s ease;
+}
+img:hover {
     cursor: pointer;
 }
-.item   {
-    background-color: hsl(219, 9%, 45%);
-    width: 1.5rem;
-    height: 0.3rem;
+li {
+    list-style-type: none;
+    text-decoration: none;
 }
+
 .cart-avatar {
-    border: 1px solid green;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 2.4rem;
+    float: right;
+}
+a:hover {
+    text-decoration: underline;
+
 }
 
 .cart {
@@ -57,4 +69,30 @@ header {
 .avatar:hover {
     border: 2px solid hsl(26, 100%, 55%);
     border-radius: 50%;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    gap: 5rem;
+    
+}
+img{
+    border-radius: 5px;
+}
+.img-1{
+    width: 100%;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.thumbnails img {
+    height: 100px;
+    width: 100px;
 }
