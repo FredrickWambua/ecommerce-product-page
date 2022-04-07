@@ -81,9 +81,8 @@ input:checked ~ .hamburger:after{
 .menu ul{
     display: flex;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 2rem;
     list-style-type: none;
-    margin-left: 4rem;
 }
 
 img {
@@ -131,16 +130,17 @@ a:hover {
     display: flex;
     flex-direction: row;
     margin-top: 5rem;
-    gap: 5rem;
     align-items: center;
+    justify-content: space-between;
+    gap: 10%;
     
 }
-.grid-item-1 {
-    max-width: 80%;
-}
+
+.grid-item-1,
 .grid-item-2 {
-    max-width: 80%;
+    width: 80%;
 }
+
 img{
     border-radius: 5px;
 }
@@ -244,7 +244,7 @@ button, img {
     header {
         display: flex;
         flex-direction: row;
-        padding: 10px 20px;
+        
     }
     input:checked ~ .menu {
         left: 0;
@@ -327,5 +327,8 @@ button, img {
   }
 
   @media (min-width: 376px) and (max-width: 1440px) {
-
+    .hamburger,
+    .toggle-menu {
+        display: none;
+    }
   }
